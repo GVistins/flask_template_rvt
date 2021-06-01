@@ -1,5 +1,5 @@
 body {
-  background-color: var(--bg-color);
+  background-color: linen;
   color: var(--font-color) !important;
 }
 
@@ -51,7 +51,7 @@ ul {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: var(--nav-color);
+  background-color: linen;
 }
 
 li {
@@ -60,7 +60,7 @@ li {
 
 li a {
   display: block;
-  color: white;
+  color: black;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -68,9 +68,28 @@ li a {
 }
 
 li a:hover:not(.active) {
-  background-color: #111;
+  background-color: paleturquoise;
 }
 
 .active {
-  background-color: var(--hover-color);
+  background-color: paleturquoise;
+}
+
+#logo {
+  position: absolute;
+  top: 8px;
+  right: 16px;
+}
+
+.transmenu {
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  margin: 0 auto;
+}
+
+.container {
+  display:flex;
+  align-items:center;
+  justify-content:center;
 }
