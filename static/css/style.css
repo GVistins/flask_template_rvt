@@ -1,5 +1,5 @@
 body {
-  background-color: linen;
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/c/c2/Glorious-blue-mountain-range.jpg");
   color: var(--font-color) !important;
 }
 
@@ -92,4 +92,18 @@ li a:hover:not(.active) {
   display:flex;
   align-items:center;
   justify-content:center;
+}
+
+#input_Fields {
+  display : flex;
+  align-items: center;
+  justify-content:center;
+  position: relative;
+  height:200px;
+  font-size:14pt;
+}
+
+
+#aNosaukums {
+  display: none;
 }

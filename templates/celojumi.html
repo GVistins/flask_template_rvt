@@ -8,7 +8,9 @@
     <div class="container">
       <nav>
         <ul>
-          <img src="static/img/logo.jpg" alt="Company logo" id="logo">
+          <a href="https://flasktemplatervt.dp2gvistins.repl.co/">
+            <img src="static/img/logo.jpg" alt="Company logo" id="logo">
+          </a>
           <li><a href="/">HOME</a></li>
           <li><a href="/agenturas">AĢENTŪRAS</a></li>
           <li><a href="/valstis">VALSTIS</a></li>
@@ -16,6 +18,15 @@
           <li><a href="./stats">STATISTIKA</a></li>
         </ul>
       </nav>
+    </div>
+    <div id="input_Fields">
+      <input type="text" placeholder="Sākuma datums" id="input_S_Datums">
+      <input type="text" placeholder="Beigu datums" id="input_B_Datums">
+      <input type="text" placeholder="Valsts (no)" id="input_Valsts_No">
+      <input type="text" placeholder="Valsts (uz)" id="input_Valsts_Uz">
+      <input type="text" placeholder="Cena" id="input_Cena">
+      <input type="text" placeholder="Pieejamās vietas" id="input_Vietas_Pieejamas">
+      <button type="button" on_click="Add_C();" id="button_three_one">Pievienot</button>
     </div>
   </body>
   <script src="static/js/script.js"></script>
