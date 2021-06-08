@@ -4,7 +4,7 @@ function Add_A(){
   b = document.getElementById("input_Adrese");
   aNosaukums = a.value;
   aAdrese = b.value;
-  
+
   const aData = []
   aData.push(aNosaukums);
   aData.push(aAdrese);
@@ -62,7 +62,6 @@ function Add_C() {
 function Appear(){
   var x = document.getElementById("aNosaukums");
   x.style.display = "block";
-  console.log("a")
 }
 
 function Agentura(){
