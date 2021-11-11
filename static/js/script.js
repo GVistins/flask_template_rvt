@@ -39,19 +39,21 @@ function Add_C() {
   e = document.getElementById("input_Cena");
   f = document.getElementById("input_Vietas_Pieejamas");
 
-  c_sakuma_datums = a;
-  c_beigu_datums = b;
-  c_no_valsts = c;
-  c_uz_valsts = d;
-  c_cena = e;
-  c_pieejamas_vietas = f;
+  c_Sakuma_Datums = a.value;
+  c_Beigu_Datums = b.value;
+  c_No_Valsts = c.value;
+  c_Uz_Valsts = d.value;
+  c_Cena = e.value;
+  c_Pieejamas_Vietas = f.value;
 
-  console.log("Sākuma datums: "+a.value);
-  console.log("Beigu datums: "+b.value);
-  console.log("Valsts (No): "+c.value);
-  console.log("Valsts (Uz): "+d.value);
-  console.log("Cena: "+e.value);
-  console.log("Pieejamās vietas: "+f.value);
+  const cData = []
+  cData.push(c_Sakuma_Datums);
+  cData.push(c_Beigu_Datums);
+  cData.push(c_No_Valsts);
+  cData.push(c_Uz_Valsts);
+  cData.push(c_Cena);
+  cData.push(c_Pieejamas_Vietas);
+  console.log(cData)
 
   a.value = "";
   b.value = "";
