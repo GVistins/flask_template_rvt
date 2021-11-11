@@ -18,11 +18,14 @@ function Add_V(){
   a = document.getElementById("input_Nosaukums_V");
   b = document.getElementById("input_Saisinajums");
 
-  v_nosaukums = a;
-  v_saisinajums = b;
+  vNosaukums = a.value;
+  vSaisinajums = b.value;
 
-  console.log("Valsts: "+a.value)
-  console.log("Valsts saīsinājums: "+b.value)
+
+  const vData = []
+  vData.push(vNosaukums);
+  vData.push(vSaisinajums);
+  console.log(vData)
 
   a.value = "";
   b.value = "";
