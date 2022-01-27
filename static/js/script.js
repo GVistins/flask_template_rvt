@@ -54,7 +54,7 @@ function Add_C() {
   cData.push(c_Cena);
   cData.push(c_Pieejamas_Vietas);
   console.log(cData)
-
+  
   a.value = "";
   b.value = "";
   c.value = "";
