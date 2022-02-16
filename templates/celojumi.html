@@ -19,14 +19,29 @@
         </ul>
       </nav>
     </div>
-    <div id="input_Fields">
-      <input type="text" placeholder="Sākuma datums" id="input_S_Datums">
-      <input type="text" placeholder="Beigu datums" id="input_B_Datums">
-      <input type="text" placeholder="Valsts (no)" id="input_Valsts_No">
-      <input type="text" placeholder="Valsts (uz)" id="input_Valsts_Uz">
-      <input type="text" placeholder="Cena" id="input_Cena">
-      <input type="text" placeholder="Pieejamās vietas" id="input_Vietas_Pieejamas">
-      <button type="button" on_click="Celot_prieks();" id="button_three_one">Pievienot</button>
+
+    <div class="celojumi">
+    <h1>Ceļojuma pievienošana</h1>
+    <table>
+      <tr>
+        <th>Sākuma datums</th>
+        <th>Beigu datums</th>
+        <th>Valsts (no)</th>
+        <th>Valsts (uz)</th>
+        <th>Cena</th>
+        <th>Pieejamās vietas</th>
+        <th></th>
+      </tr>
+    </table>
+    <form action="/" method="POST">
+      <input type="text" name="startdate" id="startdate" placeholder="Sākuma datums">
+      <input type="text" name="enddate" id="enddate" placeholder="Beigu datums">
+      <input type="text" name="countryfrom" id="countryfrom" placeholder="Valsts (no)">
+      <input type="text" name="countryto" id="countryto" placeholder="Valsts (uz)">
+      <input type="text" name="price" id="price" placeholder="Cena">
+      <input type="text" name="rem_spots" id="rem_spots" placeholder="Pieejamās vietas">
+      <input type="submit" value="Saglabāt">
+    </form>
     </div>
   </body>
   <script src="static/js/script.js"></script>

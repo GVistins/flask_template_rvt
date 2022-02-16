@@ -20,10 +20,21 @@
       </nav>
     </div>
 
-    <div id="input_Fields">
-      <input type="text" placeholder="Nosaukums" id="input_Nosaukums_A">
-      <input type="text" placeholder="Adrese" id="input_Adrese">
-      <button type:"button" onclick="Celot_prieks();" id="button_one_one">Pievienot</button>
+    <div class="agenturas">
+    <h1>Aģentūras pievienošana</h1>
+    <table>
+      <tr>
+        <th>Nosaukums</th>
+        <th>Adrese</th>
+        <th>Pievienots</th>
+        <th></th>
+      </tr>
+    </table>
+    <form action="/" method="POST">
+      <input type="text" name="name" id="name" placeholder="Nosaukums">
+      <input type="text" name="adress" id="adress" placeholder="Adrese">
+      <input type="submit" value="Saglabāt">
+    </form>
     </div>
   </body>
   <script src="static/js/script.js"></script>

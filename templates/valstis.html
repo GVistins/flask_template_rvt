@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Admin | Valstis</title>
-    <link href="static/css/style.css" rel="stylesheet">
-  </head>
-  <body>
-    <div class="container">
-      <nav>
-        <ul>
-          <a href="https://flasktemplatervt.dp2gvistins.repl.co/">
-            <img src="static/img/logo.jpg" alt="Company logo" id="logo">
+
+<head>
+	<title>Admin | Valstis</title>
+	<link href="static/css/style.css" rel="stylesheet">
+</head>
+
+<body>
+	<div class="container">
+		<nav>
+			<ul>
+				<a href="https://flasktemplatervt.dp2gvistins.repl.co/">
+					<img src="static/img/logo.jpg" alt="Company logo" id="logo">
           </a>
           <li><a href="/">HOME</a></li>
           <li><id= "ag"><a href="/agenturas">AĢENTŪRAS</a></li>
@@ -19,11 +21,22 @@
         </ul>
       </nav>
     </div>
-      <div id="input_Fields">
-        <input type="text" placeholder="Valsts nosaukums" id="input_Nosaukums_V">
-        <input type="text" placeholder="Saīsinājums" id="input_Saisinajums">
-        <button type="button" onclick="Celot_prieks();" id="button_two_one">Pievienot</button>
-      </div>
+    <div class="valstis">
+    <h1>Valsts pievienošana</h1>
+    <table>
+      <tr>
+        <th>Nosaukums</th>
+        <th>Saīsinājums</th>
+        <th>Pievienots</th>
+      </tr>
+    </table>
+    <form action="/" method="POST">
+      <input type="text" name="name" id="name" placeholder="Valsts nosaukums">
+      <input type="text" name="abbr" id="abbr" placeholder="Valsts saīsinājums">
+      <input type="submit" value="Saglabāt">
+    </form>
+    </div>
+  </body>  
   </body>
   <script src="static/js/script.js"></script>
 </html>
