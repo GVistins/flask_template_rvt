@@ -29,6 +29,16 @@
         <th>Pievienots</th>
         <th></th>
       </tr>
+      {% for agency in agencies %}
+        <tr>
+          <td> {{ agency.content }} </td>
+          <td>
+            <a href="">Mainīt</a>
+            <br>
+            <a href="/delete/{{agency.id}}">Dzēst</a>
+          </td>
+        </tr>
+      {% endfor %}
     </table>
     <form action="/" method="POST">
       <input type="text" name="name" id="name" placeholder="Nosaukums">

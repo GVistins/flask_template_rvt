@@ -94,15 +94,6 @@ li a:hover:not(.active) {
   justify-content:center;
 }
 
-#input_Fields {
-  display : flex;
-  align-items: center;
-  justify-content:center;
-  position: relative;
-  height:200px;
-  font-size:14pt;
-}
-
 
 #aNosaukums {
   display: none;

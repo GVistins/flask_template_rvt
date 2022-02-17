@@ -35,6 +35,16 @@
       <input type="text" name="abbr" id="abbr" placeholder="Valsts saīsinājums">
       <input type="submit" value="Saglabāt">
     </form>
+    {% for country in countries %}
+        <tr>
+          <td> {{ country.content }} </td>
+          <td>
+            <a href="">Mainīt</a>
+            <br>
+            <a href="">Dzēst</a>
+          </td>
+        </tr>
+      {% endfor %}
     </div>
   </body>  
   </body>
